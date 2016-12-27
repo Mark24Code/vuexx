@@ -2,16 +2,18 @@
   <div id="app">
     <h1>Hello World</h1>
     <count></count>
+    <com-a></com-a>
   </div>
 </template>
 
 <script>
 import Count from './components/Count'
-
+import ComA from './components/comA'
 export default {
   name: 'app',
   components: {
-    Count
+    Count,
+    ComA
   }
 }
 </script>

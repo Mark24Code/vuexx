@@ -12,6 +12,7 @@
 </template>
 <script>
 import {mapGetters} from 'vuex'
+import comA from './comA.vue'
 export default {
   name: 'hello',
   data () {

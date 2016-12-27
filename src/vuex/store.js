@@ -4,6 +4,8 @@ import mutations from './mutations'
 import actions from './actions'
 import getters from './getters'
 
+import moduleA from './modules/mA/store'
+
 Vue.use(Vuex)
 
 const state = {
@@ -14,5 +16,8 @@ export default new Vuex.Store({
     state,
     mutations,
     actions,
-    getters
+    getters,
+    modules:{
+        a:moduleA
+    }
 })
