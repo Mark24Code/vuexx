@@ -26,7 +26,7 @@ const actions = {
 }
 
 const getters = {
-    count:(state)=>{
+    count(state){
         return state.count
     }
 }
