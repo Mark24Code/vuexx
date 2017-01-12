@@ -8,10 +8,14 @@
       <button @click="increment">Inc</button>
       <button @click="decrement">Dec</button>
     </div>
+    <div>
+      <suba @KKK="faKKK('s')"></suba>
+    </div>
   </div>
 </template>
 <script>
 import {mapGetters} from 'vuex'
+import suba from './suba.vue'
 export default {
   name: 'hello',
   data () {
@@ -19,15 +23,24 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
+  mounted(){
+
+  },
   computed:mapGetters([
       'count'
   ]),
+  components:{
+    suba
+  },
   methods:{
     increment(){
       this.$store.dispatch("inc")
     },
     decrement(){
       this.$store.dispatch("dec")
+    },
+    faKKK(s){
+      console.log("this is COUNT Father [msg]:"+s)
     }
   }
 }
